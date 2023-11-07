@@ -245,7 +245,7 @@ nav div:hover {
     margin-bottom: 6px;
 }
 
-#hebergements article {
+#hebergements section {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
@@ -267,6 +267,18 @@ nav div:hover {
     display: flex;
     flex-direction: column;
     gap: 33px;
+}
+
+#heb-resultats .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#heb-populaires .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 #heb-resultats .hebergement {
@@ -330,7 +342,7 @@ nav div:hover {
 #heb-populaires .heb-info {
     background-color: white;
     border-radius: 0 20px 20px 0;
-    padding: 16px 22px 12px 15px;
+    padding: 16px 15px 12px 15px;
     margin-top: 0;
     width: 100%;
 }
@@ -377,17 +389,23 @@ nav div:hover {
     margin-bottom: 61px;
 }
 
-.article-title {
+.section-title {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.article-title .fa-chart-line {
+.section-title .fa-chart-line {
     font-size: 1.125rem;
     line-height: 1.125rem;
     color: #0065FC;
+}
+
+#activites .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .activite {
@@ -482,9 +500,13 @@ footer h3, footer ul {
         height: 114px;
     }
 
+    #heb-populaires .heb-info {
+        padding: 12px 10px 12px 8px;
+    }
+
     .heb-info h4 {
-        font-size: 0.875rem;
-        line-height: 0.875rem;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 
     .activite img {
@@ -496,13 +518,12 @@ footer h3, footer ul {
 /*** version mobile ***/
 /**********************/
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 767px) {
     body {
         padding: 0;
     }
 
-    article#heb-populaires, article#heb-resultats, section#trouvez, section#activites {
+    #heb-populaires, #heb-resultats, section#trouvez, section#activites {
         padding: 25px 4.5% !important;
     }
 
@@ -596,7 +617,7 @@ footer h3, footer ul {
         margin-bottom: 0;
     }
 
-    #hebergements article {
+    #hebergements section {
         border-radius: 0;
         width: 100%;
         padding: 0;
