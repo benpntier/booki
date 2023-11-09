@@ -23,7 +23,7 @@ L'objectif est d'**intégrer l'interface** du site avec du code **HTML et CSS**,
   * \< 768px pour les téléphones portables
 * **Largeur maximum** de **1440px**
 * **Largeur minimum** de **320px** *(en-deça, le comportement n'est pas garanti)*
-* L'intégration a d'abord été ralisée pour les ordinateurs (**desktop-first**), puis les tablettes et enfin les téléphones, en utilisant les **Media Queries**.
+* L'intégration a d'abord été réalisée pour les ordinateurs (**desktop-first**), puis les tablettes et enfin les téléphones, en utilisant les **Media Queries**.
 * Les icônes proviennent de la bibliothèque [Font Awesome](https://fontawesome.com/docs/web/setup/get-started)
 * Les couleurs de la charte sont le **bleu (#0065FC)**, le **bleu clair (#DEEBFF)** et le **gris** pour le
 fond **(#F2F2F2)**.
